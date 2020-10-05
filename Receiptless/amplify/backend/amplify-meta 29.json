@@ -1,0 +1,276 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "amplify-receiptless1-dev-121338-authRole",
+			"UnauthRoleArn": "arn:aws:iam::706350010776:role/amplify-receiptless1-dev-121338-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::706350010776:role/amplify-receiptless1-dev-121338-authRole",
+			"Region": "eu-west-1",
+			"DeploymentBucketName": "amplify-receiptless1-dev-121338-deployment",
+			"UnauthRoleName": "amplify-receiptless1-dev-121338-unauthRole",
+			"StackName": "amplify-receiptless1-dev-121338",
+			"StackId": "arn:aws:cloudformation:eu-west-1:706350010776:stack/amplify-receiptless1-dev-121338/46a6b9d0-49a3-11ea-a2a0-0272ba7477a4",
+			"AmplifyAppId": "dgrykhvpovvxn"
+		},
+		"categories": {
+			"auth": {
+				"receiptless1471fa081": {}
+			}
+		}
+	},
+	"function": {
+		"UploadToBucket": {
+			"service": "Lambda",
+			"providerPlugin": "awscloudformation",
+			"build": true,
+			"output": {
+				"Region": "eu-west-1",
+				"Arn": "arn:aws:lambda:eu-west-1:706350010776:function:UploadToS3Bucket-dev",
+				"Name": "UploadToS3Bucket-dev",
+				"LambdaExecutionRole": "receiptless1LambdaRole0dcba82f-dev"
+			},
+			"lastPushTimeStamp": "2020-03-01T15:11:44.301Z",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-receiptless1-dev-121338-deployment/amplify-cfn-templates/function/UploadToBucket-cloudformation-template.json",
+				"logicalId": "functionUploadToBucket"
+			},
+			"lastBuildTimeStamp": "2020-02-24T13:33:52.768Z",
+			"lastPackageTimeStamp": "2020-02-24T17:07:15.397Z",
+			"distZipFilename": "UploadToBucket-3853494c6a414d4a3431-build.zip",
+			"lastPushDirHash": "s2+wq0in38aYek/n+CgfkhLIJxI="
+		},
+		"LambdaOCRS3": {
+			"service": "Lambda",
+			"providerPlugin": "awscloudformation",
+			"build": true,
+			"lastBuildTimeStamp": "2020-02-23T21:53:48.544Z",
+			"lastPackageTimeStamp": "2020-03-01T15:11:12.442Z",
+			"distZipFilename": "LambdaOCRS3-6150754179415343356c-build.zip",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-receiptless1-dev-121338-deployment/amplify-cfn-templates/function/LambdaOCRS3-cloudformation-template.json",
+				"logicalId": "functionLambdaOCRS3"
+			},
+			"lastPushTimeStamp": "2020-03-01T15:11:44.311Z",
+			"output": {
+				"Region": "eu-west-1",
+				"Arn": "arn:aws:lambda:eu-west-1:706350010776:function:LambdaOCRS3-dev",
+				"Name": "LambdaOCRS3-dev",
+				"LambdaExecutionRole": "receiptless1LambdaRole3f3e66fa-dev"
+			},
+			"lastPushDirHash": "JxsbbS/SYljANI5xfVzkeaTHDos="
+		},
+		"ocrParseText": {
+			"service": "Lambda",
+			"providerPlugin": "awscloudformation",
+			"build": true,
+			"lastBuildTimeStamp": "2020-02-23T21:53:49.572Z",
+			"lastPackageTimeStamp": "2020-03-01T12:02:01.563Z",
+			"distZipFilename": "ocrParseText-51583865473259464d74-build.zip",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-receiptless1-dev-121338-deployment/amplify-cfn-templates/function/ocrParseText-cloudformation-template.json",
+				"logicalId": "functionocrParseText"
+			},
+			"lastPushTimeStamp": "2020-03-01T15:11:44.304Z",
+			"output": {
+				"Region": "eu-west-1",
+				"Arn": "arn:aws:lambda:eu-west-1:706350010776:function:ocrParseText-dev",
+				"Name": "ocrParseText-dev",
+				"LambdaExecutionRole": "receiptless1LambdaRole002c1a93-dev"
+			},
+			"lastPushDirHash": "gktRl2IP9Acp8GwWHIKVeruA3e0="
+		},
+		"getReceiptsDB": {
+			"service": "Lambda",
+			"providerPlugin": "awscloudformation",
+			"build": true,
+			"lastBuildTimeStamp": "2020-02-23T21:53:51.168Z",
+			"lastPackageTimeStamp": "2020-03-01T12:02:02.642Z",
+			"distZipFilename": "getReceiptsDB-6766412b73323978774a-build.zip",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-receiptless1-dev-121338-deployment/amplify-cfn-templates/function/getReceiptsDB-cloudformation-template.json",
+				"logicalId": "functiongetReceiptsDB"
+			},
+			"lastPushTimeStamp": "2020-03-01T15:11:44.304Z",
+			"output": {
+				"Region": "eu-west-1",
+				"Arn": "arn:aws:lambda:eu-west-1:706350010776:function:getReceiptsDB-dev",
+				"Name": "getReceiptsDB-dev",
+				"LambdaExecutionRole": "receiptless1LambdaRole0d9f1f36-dev"
+			},
+			"lastPushDirHash": "JJ0cm6xFfeF4RY++TMhTqoV45lM="
+		},
+		"deleteReceipt": {
+			"service": "Lambda",
+			"providerPlugin": "awscloudformation",
+			"build": true,
+			"dependsOn": [
+				{
+					"category": "storage",
+					"resourceName": "s3bucket",
+					"attributes": [
+						"BucketName"
+					]
+				},
+				{
+					"category": "storage",
+					"resourceName": "receiptlessDB",
+					"attributes": [
+						"Name",
+						"Arn"
+					]
+				}
+			],
+			"lastBuildTimeStamp": "2020-02-24T17:07:13.886Z",
+			"lastPackageTimeStamp": "2020-03-01T13:10:23.703Z",
+			"distZipFilename": "deleteReceipt-6d356d74446d33616956-build.zip",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-receiptless1-dev-121338-deployment/amplify-cfn-templates/function/deleteReceipt-cloudformation-template.json",
+				"logicalId": "functiondeleteReceipt"
+			},
+			"lastPushTimeStamp": "2020-03-01T15:11:44.305Z",
+			"output": {
+				"Region": "eu-west-1",
+				"Arn": "arn:aws:lambda:eu-west-1:706350010776:function:deleteReceipt-dev",
+				"Name": "deleteReceipt-dev",
+				"LambdaExecutionRole": "receiptless1LambdaRole87b233b9-dev"
+			},
+			"lastPushDirHash": "vY/QjrmqXTtjlit5XJfntYGz2Es="
+		},
+		"getImageS3": {
+			"service": "Lambda",
+			"providerPlugin": "awscloudformation",
+			"build": true,
+			"dependsOn": [
+				{
+					"category": "storage",
+					"resourceName": "s3bucket",
+					"attributes": [
+						"BucketName"
+					]
+				}
+			],
+			"lastBuildTimeStamp": "2020-02-24T16:50:47.157Z",
+			"lastPackageTimeStamp": "2020-02-24T17:07:15.450Z",
+			"distZipFilename": "getImageS3-766f3754476e53536137-build.zip",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-receiptless1-dev-121338-deployment/amplify-cfn-templates/function/getImageS3-cloudformation-template.json",
+				"logicalId": "functiongetImageS3"
+			},
+			"lastPushTimeStamp": "2020-03-01T15:11:44.306Z",
+			"output": {
+				"Region": "eu-west-1",
+				"Arn": "arn:aws:lambda:eu-west-1:706350010776:function:getImageS3-dev",
+				"Name": "getImageS3-dev",
+				"LambdaExecutionRole": "receiptless1LambdaRolea44ebec2-dev"
+			},
+			"lastPushDirHash": "CnYnsMVJv/VjzqbmlPSnIuuboe0="
+		}
+	},
+	"api": {
+		"ourAPI": {
+			"service": "API Gateway",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [
+				{
+					"category": "function",
+					"resourceName": "UploadToBucket",
+					"attributes": [
+						"Name",
+						"Arn"
+					]
+				},
+				{
+					"category": "function",
+					"resourceName": "getReceiptsDB",
+					"attributes": [
+						"Name",
+						"Arn"
+					]
+				},
+				{
+					"category": "function",
+					"resourceName": "deleteReceipt",
+					"attributes": [
+						"Name",
+						"Arn"
+					]
+				},
+				{
+					"category": "function",
+					"resourceName": "getImageS3",
+					"attributes": [
+						"Name",
+						"Arn"
+					]
+				}
+			],
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-receiptless1-dev-121338-deployment/amplify-cfn-templates/api/ourAPI-cloudformation-template.json",
+				"logicalId": "apiourAPI"
+			},
+			"lastPushTimeStamp": "2020-03-01T15:11:44.306Z",
+			"output": {
+				"ApiName": "ourAPI",
+				"RootUrl": "https://qs0p34ctyc.execute-api.eu-west-1.amazonaws.com/dev"
+			},
+			"lastPushDirHash": "Dwwa+Eoe4vVzdNY9QlJKYRqNUnY="
+		}
+	},
+	"auth": {
+		"receiptless1471fa081": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"output": {
+				"AppClientSecret": "1nb0m7dq0hhipfo31qtkr5lhf6emrmp9ef74g9cdkjau89urb999",
+				"UserPoolId": "eu-west-1_QQ9ZNWPHA",
+				"AppClientIDWeb": "irbcf17vse2tlk39848dilkpg",
+				"AppClientID": "4k0pkulsdt0b0bis7g9u71627v",
+				"IdentityPoolId": "eu-west-1:b74d5074-aaff-44ad-a9f2-586411e47958",
+				"IdentityPoolName": "receiptless1471fa081_identitypool_471fa081__dev",
+				"UserPoolName": "receiptless1471fa081_userpool_471fa081"
+			},
+			"lastPushTimeStamp": "2020-03-01T15:11:44.307Z",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-receiptless1-dev-121338-deployment/amplify-cfn-templates/auth/receiptless1471fa081-cloudformation-template.yml",
+				"logicalId": "authreceiptless1471fa081"
+			},
+			"lastPushDirHash": "RBdQawIqZDULk+hS/oqV+hsiQjA="
+		}
+	},
+	"storage": {
+		"s3bucket": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"BucketName": "receipts-bucket121338-dev",
+				"Region": "eu-west-1"
+			},
+			"lastPushTimeStamp": "2020-03-01T15:11:44.307Z",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-receiptless1-dev-121338-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
+				"logicalId": "storages3bucket"
+			},
+			"lastPushDirHash": "nv9VaSRYnJ+F7y3AXaADhT9ABAc="
+		},
+		"receiptlessDB": {
+			"service": "DynamoDB",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-receiptless1-dev-121338-deployment/amplify-cfn-templates/storage/receiptlessDB-cloudformation-template.json",
+				"logicalId": "storagereceiptlessDB"
+			},
+			"lastPushTimeStamp": "2020-03-01T15:11:44.308Z",
+			"output": {
+				"PartitionKeyName": "receiptID",
+				"SortKeyName": "userID",
+				"SortKeyType": "S",
+				"Region": "eu-west-1",
+				"Arn": "arn:aws:dynamodb:eu-west-1:706350010776:table/receiptlessDB-dev",
+				"StreamArn": "arn:aws:dynamodb:eu-west-1:706350010776:table/receiptlessDB-dev/stream/2020-02-21T13:33:43.057",
+				"PartitionKeyType": "S",
+				"Name": "receiptlessDB-dev"
+			},
+			"lastPushDirHash": "/NvzbvVU/gdgs59c3UPTQh69woE="
+		}
+	}
+}

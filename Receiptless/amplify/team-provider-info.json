@@ -1,0 +1,20 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-receiptless1-dev-121338-authRole",
+            "UnauthRoleArn": "arn:aws:iam::706350010776:role/amplify-receiptless1-dev-121338-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::706350010776:role/amplify-receiptless1-dev-121338-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "amplify-receiptless1-dev-121338-deployment",
+            "UnauthRoleName": "amplify-receiptless1-dev-121338-unauthRole",
+            "StackName": "amplify-receiptless1-dev-121338",
+            "StackId": "arn:aws:cloudformation:eu-west-1:706350010776:stack/amplify-receiptless1-dev-121338/46a6b9d0-49a3-11ea-a2a0-0272ba7477a4",
+            "AmplifyAppId": "dgrykhvpovvxn"
+        },
+        "categories": {
+            "auth": {
+                "receiptless1471fa081": {}
+            }
+        }
+    }
+}

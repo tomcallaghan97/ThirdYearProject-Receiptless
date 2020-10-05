@@ -1,0 +1,89 @@
+{
+    "paths": [
+        {
+            "name": "/postReceipts",
+            "lambdaFunction": "UploadToBucket",
+            "privacy": {
+                "open": true
+            }
+        },
+        {
+            "name": "/getReceipts",
+            "lambdaFunction": "getReceiptsDB",
+            "privacy": {
+                "open": true
+            }
+        },
+        {
+            "name": "/deleteReceipts",
+            "lambdaFunction": "deleteReceipt",
+            "privacy": {
+                "open": true
+            }
+        },
+        {
+            "name": "/getImage",
+            "lambdaFunction": "getImageS3",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "ourAPI",
+    "apiName": "ourAPI",
+    "functionArns": [
+        {
+            "lambdaFunction": "UploadToBucket"
+        },
+        {
+            "lambdaFunction": "getReceiptsDB"
+        },
+        {
+            "lambdaFunction": "deleteReceipt"
+        },
+        {
+            "lambdaFunction": "getImageS3"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-receiptless1-dev-121338-authRole",
+        "unAuthRoleName": "amplify-receiptless1-dev-121338-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "UploadToBucket",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        },
+        {
+            "category": "function",
+            "resourceName": "getReceiptsDB",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        },
+        {
+            "category": "function",
+            "resourceName": "deleteReceipt",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        },
+        {
+            "category": "function",
+            "resourceName": "getImageS3",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ],
+    "uuid": "8e1b2733"
+}

@@ -1,0 +1,12 @@
+{
+    "permissions": {
+        "storage": {
+            "s3bucket": [
+                "create",
+                "read",
+                "update",
+                "delete"
+            ]
+        }
+    }
+}

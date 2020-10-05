@@ -1,0 +1,7 @@
+{
+    "tableName": "receiptlessDB",
+    "partitionKeyName": "receiptID",
+    "partitionKeyType": "S",
+    "sortKeyName": "userID",
+    "sortKeyType": "S"
+}
